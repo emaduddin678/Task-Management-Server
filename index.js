@@ -13,8 +13,8 @@ const app = express();
 dotenv.config();
 
 connect();
-ifDisconnect();
-
+ifDisconnect(); 
+ 
 app.use(
   cors({
     origin: [
@@ -28,9 +28,8 @@ app.use(
 
 app.use(express.json());
 app.use(cookieParser());
- 
-const port = process.env.PORT || 8000;
 
+const port = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
   res.json({ value: "Congrats Server is working" });
