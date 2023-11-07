@@ -10,6 +10,8 @@ import User from "./models/UserModel.js";
 // here all routes are importing
 
 const app = express();
+dotenv.config();
+
 connect();
 ifDisconnect();
 
@@ -23,10 +25,10 @@ app.use(
     credentials: true,
   })
 );
-dotenv.config();
+
 app.use(express.json());
 app.use(cookieParser());
-
+ 
 const port = process.env.PORT || 8000;
 
 
