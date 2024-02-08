@@ -18,6 +18,8 @@ ifDisconnect();
 app.use(
   cors({
     origin: [
+     "http://localhost:5173",
+     "http://localhost:5174",
       "https://task-management-app-9f99e.web.app",
       "https://task-management-app-9f99e.firebaseapp.com",
       "https://task-management-app-9f99e.firebaseapp.com/?_gl=1*ked0vo*_ga*MTk4OTA4NDE1OC4xNjkyNzI5MzIy*_ga_CW55HF8NVT*MTY5OTM3MzE1OC4yMS4xLjE2OTkzNzMyMDcuMTEuMC4w",
